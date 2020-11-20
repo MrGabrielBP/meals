@@ -9,8 +9,10 @@ class CategoriesScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Vamos Cozinhar?'),
+        centerTitle: true,
       ),
       body: GridView(
+        padding: const EdgeInsets.all(25),
         //Sliver é uma área que tem scroll
         //GridDelegate é uma forma de delegar como a Grid será renderizada
         //Vai extender o CrossAxis
