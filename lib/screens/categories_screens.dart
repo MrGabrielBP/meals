@@ -13,10 +13,10 @@ class CategoriesScreen extends StatelessWidget {
       ),
       body: GridView(
         padding: const EdgeInsets.all(25),
-        //Sliver é uma área que tem scroll
         //GridDelegate é uma forma de delegar como a Grid será renderizada
         //Vai extender o CrossAxis
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
+          //Sliver é uma área que tem scroll
           //Cada elemento vai ter umae extensão de no máximo 200 pxs.
           maxCrossAxisExtent: 200,
           //Proporção do tamanho de cada elemento (Largo / alto).
