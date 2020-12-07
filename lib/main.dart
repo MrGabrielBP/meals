@@ -34,3 +34,27 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+/*
+//Vai entrar aqui caso a rota não seja encontrada. (Rotas dinâmicas)
+
+    onGenerateRoute: (settings) {
+      if (settings.name == '/alguma-coisa') {
+        return null;
+      } else if (settings.name == 'outra-coisa') {
+        return null;
+      } else {
+        return MaterialPageRoute(builder: (_) {
+          return CategoriesScreen();
+        });
+      }
+    }
+
+//Caso nenhuma dessas outras rotas forem encontradas.
+
+    onUnknownRoute: (settings) {
+      return MaterialPageRoute(builder: (_) {
+        return CategoriesScreen();
+      });
+    }
+*/
