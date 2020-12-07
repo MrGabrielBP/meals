@@ -23,7 +23,7 @@ class CategoryItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //widget clicavel.
+    //widget clicavel. Adiciona evento de clique ao Container.
     return InkWell(
       onTap: () => _selectedCategory(context),
       borderRadius: BorderRadius.circular(15),
