@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meals/components/step_item.dart';
 import '../models/meal.dart';
 
 class MealDetailScreen extends StatelessWidget {
@@ -74,19 +75,7 @@ class MealDetailScreen extends StatelessWidget {
               child: ListView.builder(
                 itemCount: meal.steps.length,
                 itemBuilder: (ctx, index) {
-                  return Column(
-                    children: [
-                      ListTile(
-                        leading: CircleAvatar(
-                          child: Text('${index + 1}'),
-                        ),
-                        title: Text(meal.steps[index]),
-                        trailing: Checkbox(value: false, onChanged: null),
-                      ),
-                      //Linha horizontal para dividir
-                      Divider(),
-                    ],
-                  );
+                  return StepItem(meal.steps[index], index);
                 },
               ),
             )
