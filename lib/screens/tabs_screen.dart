@@ -29,6 +29,7 @@ class _TabsScreenState extends State<TabsScreen> {
           _screens[_selectedScreenIndex]['title'],
         ),
       ),
+      drawer: MainDrawer(),
       //Menu lateral.
       body: _screens[_selectedScreenIndex]['screen'],
       //cria uma tabbar na parte inferior.
