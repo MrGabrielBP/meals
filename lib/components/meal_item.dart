@@ -28,6 +28,7 @@ class MealItem extends StatelessWidget {
             Stack(
               children: [
                 //Garante que a imagem vai ficar contida nessas bordas.
+                //Create a rouded-rectangle clip.
                 ClipRRect(
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(15),
